@@ -1121,7 +1121,7 @@ body{
     margin-left: 3px;
 
     position: absolute;
-    bottom: 272px;
+    bottom: 238px;
 }
 .profile-filter div:active::after{
     width: 4%;
