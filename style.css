@@ -449,18 +449,19 @@ body{
 }
 #no-text{
     /*border: 2px solid green;*/
-    width: 15%;
-    column-gap: 2em;
-    padding: 5px;
+    width: 10%;
+    column-gap: 0em;
+    padding: 0px;
     margin-bottom: 4px;
 }
 .interact-icon{
+    /*border: 2px solid red;*/
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 .interact-icon div:nth-child(2){
-    margin-left: 28px;
+    /*margin-left: 28px;*/
 }
 .interact-icon:hover{
     color: rgb(29, 155, 240, 1);
@@ -484,7 +485,8 @@ body{
     background-color: rgba(240, 82, 164, 0.166);
 }
 .icon-circle{
-    position: absolute;
+    /*position: absolute;*/
+    
     padding: 8px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -1083,9 +1085,12 @@ body{
     width: 100%;
     height: 60px;
     padding:  0px;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
+    /*display: flex;
+    justify-content: space-around;*/
+    /*position: relative;*/
+
+    display: grid;
+
 }
 .profile-filter-tab{
     width: 100%;
@@ -1096,6 +1101,12 @@ body{
     justify-content: center;
     align-items: center;
 }
+.profile-filter div:nth-child(2){
+    grid-area: 1/2;
+}
+.profile-filter div:nth-child(3){
+    grid-area: 1/3;
+}
 .profile-filter-tab:hover{
     background-color: rgba(213, 218, 222, 0.597);
     transition:  background-color 0.3s ease;
@@ -1103,17 +1114,16 @@ body{
 }
 .profile-filter div::after{
     content: '';
-    width: 0;
-    height: 5px;
+    height: 4px;
     border-radius: 30px;
     background: rgb(29, 155, 240, 1);
     margin-left: 3px;
 
     position: absolute;
-    bottom: 0px;
+    bottom: 238px;
 }
 .profile-filter div:active::after{
-    width: 9%;
+    width: 4%;
 }
 .profile-filter :active{
     color: #000000;
