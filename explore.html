@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="explore-page">
+    <div class="outside-btn"><svg viewBox="0 0 33 32" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg></div>
+    <div class="outside-btn" id="chat-btn"><svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M20.7 11.7c0-4.48-3.844-8.2-8.699-8.2-4.854 0-8.698 3.72-8.698 8.2v.015l-.001.014c-.02.667.09 1.225.25 1.767.083.28.176.545.276.839.098.285.202.595.288.918.177.663.284 1.401.156 2.271-.086.582-.274 1.191-.582 1.855 1.264.375 2.55.053 4.013-.599l.455-.203.437.242c1.07.594 1.917 1.08 3.406 1.08 4.855 0 8.7-3.72 8.7-8.199zm2 0c0 5.683-4.84 10.2-10.699 10.2-1.784 0-2.96-.555-3.95-1.095-1.876.768-4.02 1.2-6.245-.075l-.885-.505.524-.875c.54-.904.77-1.581.848-2.118.078-.526.02-.98-.11-1.463-.066-.25-.15-.502-.247-.788-.095-.277-.204-.59-.301-.92-.199-.674-.36-1.449-.332-2.39C1.322 6.002 6.154 1.5 12.002 1.5c5.859 0 10.7 4.518 10.7 10.2z"></path></g></svg></div>
+
+    <div class="main-container">
+        <div class="item-container" id="nav-container" style="grid-area: nav">
+            <a href=index.html class="x-icon"><svg style="height: 30px" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-18jsvk2 r-16y2uox r-8kz0gk"><g><path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path></g></svg></a>
+            
+            <div class="nav-icons">
+                <a href="index.html" class="icon-container">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M20 9.838c0-.502-.25-.97-.668-1.248l-6.5-4.333c-.504-.336-1.16-.336-1.664 0l-6.5 4.333C4.251 8.868 4 9.336 4 9.838V18.5c0 .828.672 1.5 1.5 1.5h3v-3.5c0-1.933 1.567-3.5 3.5-3.5s3.5 1.567 3.5 3.5V20h3c.828 0 1.5-.672 1.5-1.5V9.838zm2 8.662c0 1.933-1.567 3.5-3.5 3.5h-5v-5.5c0-.829-.672-1.5-1.5-1.5s-1.5.671-1.5 1.5V22h-5C3.567 22 2 20.433 2 18.5V9.838c0-1.17.585-2.263 1.559-2.912l6.5-4.333c1.175-.784 2.707-.784 3.882 0l6.5 4.333C21.415 7.575 22 8.668 22 9.838V18.5z"></path></g></svg>
+                    <div class="blue-dot"></div>
+                    <div>Home</div>
+                </a>
+                <div class="icon-container">
+                    <svg stroke="black" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"></path></g></svg>
+                    <div style="font-weight: bold">Explore</div>
+                </div>
+                <div class="icon-container">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z"></path></g></svg>
+                    <div class="blue-notifications">20+</div>
+                    <div >Notifications</div>
+                </div>
+                <div class="icon-container">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M10 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM6 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4zm13 4v3h2v-3h3V8h-3V5h-2v3h-3v2h3zM3.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C13.318 13.65 11.838 13 10 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C5.627 11.85 7.648 11 10 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H1.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46z"></path></g></svg>
+                    <div >Follow</div>
+                </div>
+                <div class="icon-container">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M20.7 11.7c0-4.48-3.844-8.2-8.699-8.2-4.854 0-8.698 3.72-8.698 8.2v.015l-.001.014c-.02.667.09 1.225.25 1.767.083.28.176.545.276.839.098.285.202.595.288.918.177.663.284 1.401.156 2.271-.086.582-.274 1.191-.582 1.855 1.264.375 2.55.053 4.013-.599l.455-.203.437.242c1.07.594 1.917 1.08 3.406 1.08 4.855 0 8.7-3.72 8.7-8.199zm2 0c0 5.683-4.84 10.2-10.699 10.2-1.784 0-2.96-.555-3.95-1.095-1.876.768-4.02 1.2-6.245-.075l-.885-.505.524-.875c.54-.904.77-1.581.848-2.118.078-.526.02-.98-.11-1.463-.066-.25-.15-.502-.247-.788-.095-.277-.204-.59-.301-.92-.199-.674-.36-1.449-.332-2.39C1.322 6.002 6.154 1.5 12.002 1.5c5.859 0 10.7 4.518 10.7 10.2z"></path></g></svg>
+                    <div >Chat</div>
+                </div>
+                <div class="icon-container">
+                    <svg viewBox="0 0 33 32" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
+                    <div class="blue-dot"></div>
+                    <div >Grok</div>
+                </div>
+                <div class="icon-container">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path></g></svg>
+                    <div >Bookmarks</div>
+                </div>
+                <div class="icon-container">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M8.52 3.59c.8-1.1 2.04-1.84 3.48-1.84s2.68.74 3.49 1.84c1.34-.21 2.74.14 3.76 1.16s1.37 2.42 1.16 3.77c1.1.8 1.84 2.04 1.84 3.48s-.74 2.68-1.84 3.48c.21 1.34-.14 2.75-1.16 3.77s-2.42 1.37-3.76 1.16c-.8 1.1-2.05 1.84-3.49 1.84s-2.68-.74-3.48-1.84c-1.34.21-2.75-.14-3.77-1.16-1.01-1.02-1.37-2.42-1.16-3.77-1.09-.8-1.84-2.04-1.84-3.48s.75-2.68 1.84-3.48c-.21-1.35.14-2.75 1.16-3.77s2.43-1.37 3.77-1.16zm3.48.16c-.85 0-1.66.53-2.12 1.43l-.38.77-.82-.27c-.96-.32-1.91-.12-2.51.49-.6.6-.8 1.54-.49 2.51l.27.81-.77.39c-.9.46-1.43 1.27-1.43 2.12s.53 1.66 1.43 2.12l.77.39-.27.81c-.31.97-.11 1.91.49 2.51.6.61 1.55.81 2.51.49l.82-.27.38.77c.46.9 1.27 1.43 2.12 1.43s1.66-.53 2.12-1.43l.39-.77.82.27c.96.32 1.9.12 2.51-.49.6-.6.8-1.55.48-2.51l-.26-.81.76-.39c.91-.46 1.43-1.27 1.43-2.12s-.52-1.66-1.43-2.12l-.77-.39.27-.81c.32-.97.12-1.91-.48-2.51-.61-.61-1.55-.81-2.51-.49l-.82.27-.39-.77c-.46-.9-1.27-1.43-2.12-1.43zm4.74 5.68l-6.2 6.77-3.74-3.74 1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36z"></path></g></svg>
+                    <div >Premium</div>
+                </div>
+                <div class="icon-container">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z"></path></g></svg>
+                    <div >Profile</div>
+                </div>
+                <div class="icon-container" id="moreIcon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-lwhw9o r-cnnz9e"><g><path d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"></path></g></svg>
+                    <div>More</div>
+                    <div class="more-menu" id="moreMenu">
+                        <div class="more-menu-row">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-1q142lx r-1kihuf0 r-1472mwg r-di8nfa r-lrsllp" data-testid="icon"><g><path d="M3 4.5C3 3.12 4.12 2 5.5 2h13C19.88 2 21 3.12 21 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-13C4.12 22 3 20.88 3 19.5v-15zM5.5 4c-.28 0-.5.22-.5.5v15c0 .28.22.5.5.5h13c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-13zM16 10H8V8h8v2zm-8 2h8v2H8v-2z"></path></g></svg>
+                            <div>Lists</div>
+                        </div>
+                        <div class="more-menu-row">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-1q142lx r-1kihuf0 r-1472mwg r-di8nfa r-lrsllp" data-testid="icon"><g><path d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.836-.64-1.384-1.638-1.384-2.77 0-1.93 1.567-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zm-1.5-3.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zM7.5 3C9.433 3 11 4.57 11 6.5S9.433 10 7.5 10 4 8.43 4 6.5 5.567 3 7.5 3zm0 2C6.673 5 6 5.673 6 6.5S6.673 8 7.5 8 9 7.327 9 6.5 8.327 5 7.5 5z"></path></g></svg>
+                            <div>Communities</div>
+                        </div>
+                        <div class="more-menu-row">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-1q142lx r-1kihuf0 r-1472mwg r-di8nfa r-lrsllp" data-testid="icon"><g><path d="M7.323 2h11.443l-3 5h6.648L6.586 22.83 7.847 14H2.523l4.8-12zm1.354 2l-3.2 8h4.676l-.739 5.17L17.586 9h-5.352l3-5H8.677z"></path></g></svg>
+                            <div>Business</div>       
+                        </div>
+                        <div class="more-menu-row">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-1q142lx r-1kihuf0 r-1472mwg r-di8nfa r-lrsllp" data-testid="icon"><g><path d="M1.996 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.38 0 2.5 1.12 2.5 2.5v13c0 1.38-1.12 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.277 0-.5.22-.5.5v13c0 .28.223.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zm8.085 5H8.996V8h7v7h-2v-3.59l-5.293 5.3-1.415-1.42L12.581 10z"></path></g></svg>
+                            <div>Ads</div>
+                        </div>
+                        <div class="more-menu-row">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-1q142lx r-1kihuf0 r-1472mwg r-di8nfa r-lrsllp" data-testid="icon"><g><path d="M12 22.25c-4.99 0-9.18-3.393-10.39-7.994l1.93-.512c.99 3.746 4.4 6.506 8.46 6.506s7.47-2.76 8.46-6.506l1.93.512c-1.21 4.601-5.4 7.994-10.39 7.994zM5 11.5c0 3.866 3.13 7 7 7s7-3.134 7-7V8.75c0-3.866-3.13-7-7-7s-7 3.134-7 7v2.75zm12-2.75v2.75c0 2.761-2.24 5-5 5s-5-2.239-5-5V8.75c0-2.761 2.24-5 5-5s5 2.239 5 5zM11.25 8v4.25c0 .414.34.75.75.75s.75-.336.75-.75V8c0-.414-.34-.75-.75-.75s-.75.336-.75.75zm-3 1v2.25c0 .414.34.75.75.75s.75-.336.75-.75V9c0-.414-.34-.75-.75-.75s-.75.336-.75.75zm7.5 0c0-.414-.34-.75-.75-.75s-.75.336-.75.75v2.25c0 .414.34.75.75.75s.75-.336.75-.75V9z"></path></g></svg>
+                            <div>Create your Space</div>
+                        </div>
+                        <div class="more-menu-row">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-18jsvk2 r-1q142lx r-1kihuf0 r-1472mwg r-di8nfa r-lrsllp" data-testid="icon"><g><path d="M10.54 1.75h2.92l1.57 2.36c.11.17.32.25.53.21l2.53-.59 2.17 2.17-.58 2.54c-.05.2.04.41.21.53l2.36 1.57v2.92l-2.36 1.57c-.17.12-.26.33-.21.53l.58 2.54-2.17 2.17-2.53-.59c-.21-.04-.42.04-.53.21l-1.57 2.36h-2.92l-1.58-2.36c-.11-.17-.32-.25-.52-.21l-2.54.59-2.17-2.17.58-2.54c.05-.2-.03-.41-.21-.53l-2.35-1.57v-2.92L4.1 8.97c.18-.12.26-.33.21-.53L3.73 5.9 5.9 3.73l2.54.59c.2.04.41-.04.52-.21l1.58-2.36zm1.07 2l-.98 1.47C10.05 6.08 9 6.5 7.99 6.27l-1.46-.34-.6.6.33 1.46c.24 1.01-.18 2.07-1.05 2.64l-1.46.98v.78l1.46.98c.87.57 1.29 1.63 1.05 2.64l-.33 1.46.6.6 1.46-.34c1.01-.23 2.06.19 2.64 1.05l.98 1.47h.78l.97-1.47c.58-.86 1.63-1.28 2.65-1.05l1.45.34.61-.6-.34-1.46c-.23-1.01.18-2.07 1.05-2.64l1.47-.98v-.78l-1.47-.98c-.87-.57-1.28-1.63-1.05-2.64l.34-1.46-.61-.6-1.45.34c-1.02.23-2.07-.19-2.65-1.05l-.97-1.47h-.78zM12 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5c.82 0 1.5-.67 1.5-1.5s-.68-1.5-1.5-1.5zM8.5 12c0-1.93 1.56-3.5 3.5-3.5 1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5c-1.94 0-3.5-1.57-3.5-3.5z"></path></g></svg>
+                            <div>Settings and Privacy</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="post-btn">Post</div>
+            <div class="profile-btn" id="kyoung">
+                    <div class="profile-left">
+                        <img src="images/Tree 2.png">
+                        <div>
+                            <div>Kira</div>
+                            <div>@kyoung</div>
+                        </div>
+                    </div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                </div>
+        </div>
+        
+        <!--------------------------------- Grid Area: Main----------------------------->
+        <div class="item-container" style="grid-area: main" id="middle-container">
+            <div class="main-header"> 
+                <div class="search-bar-container" >  
+                    <div class="search-bar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1tjplnt r-14j79pv r-10ptun7 r-2dysd3 r-1janqcz"><g><path d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z"></path></g></svg>
+                        <input type="text" placeholder="Search" >
+                    </div>
+                    <div class="search-bar-menu" id="searchMenu">Try searching for people, lists, or keywords</div>
+                    <svg class="gear-tab" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03" style="color: rgb(15, 20, 25);"><g><path d="M10.54 1.75h2.92l1.57 2.36c.11.17.32.25.53.21l2.53-.59 2.17 2.17-.58 2.54c-.05.2.04.41.21.53l2.36 1.57v2.92l-2.36 1.57c-.17.12-.26.33-.21.53l.58 2.54-2.17 2.17-2.53-.59c-.21-.04-.42.04-.53.21l-1.57 2.36h-2.92l-1.58-2.36c-.11-.17-.32-.25-.52-.21l-2.54.59-2.17-2.17.58-2.54c.05-.2-.03-.41-.21-.53l-2.35-1.57v-2.92L4.1 8.97c.18-.12.26-.33.21-.53L3.73 5.9 5.9 3.73l2.54.59c.2.04.41-.04.52-.21l1.58-2.36zm1.07 2l-.98 1.47C10.05 6.08 9 6.5 7.99 6.27l-1.46-.34-.6.6.33 1.46c.24 1.01-.18 2.07-1.05 2.64l-1.46.98v.78l1.46.98c.87.57 1.29 1.63 1.05 2.64l-.33 1.46.6.6 1.46-.34c1.01-.23 2.06.19 2.64 1.05l.98 1.47h.78l.97-1.47c.58-.86 1.63-1.28 2.65-1.05l1.45.34.61-.6-.34-1.46c-.23-1.01.18-2.07 1.05-2.64l1.47-.98v-.78l-1.47-.98c-.87-.57-1.28-1.63-1.05-2.64l.34-1.46-.61-.6-1.45.34c-1.02.23-2.07-.19-2.65-1.05l-.97-1.47h-.78zM12 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5c.82 0 1.5-.67 1.5-1.5s-.68-1.5-1.5-1.5zM8.5 12c0-1.93 1.56-3.5 3.5-3.5 1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5c-1.94 0-3.5-1.57-3.5-3.5z"></path></g></svg>
+                </div>
+
+                <button class="header-tab active">For you<div class="header-bar show" ></div></button>
+                <button class="header-tab">Trending<div class="header-bar" ></div></button>
+                <button class="header-tab">News<div class="header-bar" ></div></button>
+                <button class="header-tab">Sports<div class="header-bar" ></div></button>
+                <button class="header-tab">Entertainment<div class="header-bar" ></div></button>
+            </div>
+
+            <div class="spacex-ad-container">
+                <img src="https://www.spacex.com/assets/images/launch-sites/SPACEX_Launch_Locations_39A_decktop.jpg">
+                <svg class="three-dots" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                <div class="spacex-text">
+                    <div>SpaceX Docuseries</div>
+                    <div>Watch the final days to Starship launch</div>
+                    <div><svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1q142lx r-ip8ujx r-1gs4q39 r-jwli3a"><g><path d="M19.498 3h-15c-1.381 0-2.5 1.12-2.5 2.5v13c0 1.38 1.119 2.5 2.5 2.5h15c1.381 0 2.5-1.12 2.5-2.5v-13c0-1.38-1.119-2.5-2.5-2.5zm-3.502 12h-2v-3.59l-5.293 5.3-1.414-1.42L12.581 10H8.996V8h7v7z"></path></g></svg>Promoted by SpaceX</div>
+                </div>
+            </div>
+
+            <div class="news" id="main-news">
+                <div class="news-header">
+                    <h3>Today's News</h3>
+                    <svg class="news-x" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1hjwoze r-12ym1je" style="color: rgb(15, 20, 25);"><g><path d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"></path></g></svg>
+                </div>
+
+                <div class="news-article">
+                    <h4 id="free-agent">Sam Neill, Jurassic Park's Dr. Alan Grant, Dies at 78</h4>
+                    <div class="avatars-container">
+                        <div class="user-avatars">
+                            <img src="https://louisiana.edu/sites/louisiana/files/subsite/gradschool/jurassic-park.jpg" id="avatar-1">
+                            <img src="https://cdn10.bigcommerce.com/s-yhxhf/products/20548/images/75801/STCT015_3.5x3.5__37605.1536367743.1080.1080.jpg?c=2" id="avatar-2">
+                            <img src="https://yt3.googleusercontent.com/CMSiLo7p4SzP-g1u82HOo3PghHoxTZ_ihXlJc7zoVuOaB5hV1AaPSjwvr5bkU2fodBH2hiARjmE=s900-c-k-c0x00ffffff-no-rj" id="avatar-3">
+                        </div>
+                        <div class="news-details">13 hours ago · Entertainment · 378k posts</div>
+                    </div>
+                </div>
+                
+                <div class="news-article">
+                    <h4>Kyle Schwarber Leads 2026 Home Run Derby Field in Philly</h4>
+                    <div class="avatars-container">
+                        <div class="user-avatars">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Philadelphia_Phillies_Insignia.svg" id="avatar-1">
+                            <img src="https://philliesnation.com/wp-content/uploads/2026/07/PHL_BB_20260630_BB_54592-1024x683.jpeg" id="avatar-2">
+                            <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:240,cw:1440,ch:1080,q:80,w:1440/HhgaHXNZ3nD6NBtKpYei47.jpg" id="avatar-3">
+                        </div>
+                        <div class="news-details">18 hours ago · Other · 10k posts</div>
+                    </div>
+                </div>
+                
+                <div class="news-article" id="marvel">
+                    <h4>12 States Sue to Block $11B Paramount-Warner Merger</h4>
+                    <div class="avatars-container" >
+                        <div class="user-avatars">
+                            <img src="https://m.media-amazon.com/images/I/31UpyS76j+L.png" id="avatar-1">
+                            <img src="https://www.hollywoodreporter.com/wp-content/uploads/2022/09/GettyImages-1425736989-H-2022.jpg?w=1296&h=730&crop=1" id="avatar-2">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/oracle-co-founder-cto-and-executive-chairman-larry-ellison-news-photo-1757603680.pjpeg?crop=0.652xw:0.979xh;0.155xw,0.00518xh&resize=640:*" id="avatar-3">
+                        </div>
+                        <div class="news-details">20 hours ago · News · 27k posts</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="explore-trending">
+                <div class="trending">
+                    <div>
+                        <div>Trending in United States</div>
+                        <h4>Freddy</h4>
+                        <div>Trending with <span style="color: rgb(29, 155, 240, 1)">Elm Street, Paramount</span></div>
+
+                    </div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                </div>
+                <div class="trending">
+                    <div>
+                        <div>Trending in United States</div>
+                        <h4>Overtime</h4>
+                    </div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                </div>
+
+                <div class="trending">
+                    <div>
+                        <div>Arts & Culture · Trending</div>
+                        <h4>#illustration</h4>
+                    </div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                </div>
+                
+                <div class="trending">
+                    <div>
+                        <div>Politics · Trending</div>
+                        <h4>Blanche</h4>
+                    </div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                </div>
+                <div class="trending">
+                    <div>
+                        <div>Politics · Trending</div>
+                        <h4>Judge Williams</h4>
+                    </div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                </div>       
+                 <div class="trending">
+                    <div>
+                        <div>Sports · Trending</div>
+                        <h4>Tracy McGrady</h4>
+                    </div>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+                </div>
+            </div>
+
+            <div class="who-to-follow" id="explore-who-to">
+                <h3>Who to follow</h3>
+                <div class="profile-btn">
+                    <div class="profile-left" id="piuriem">
+                        <img src="https://pbs.twimg.com/profile_images/1758549354359476224/tqRnZvvU_400x400.jpg">
+                        <div>
+                            <div>Tofupixel (find me on BlueSky - Not active here)</div>
+                            <div>@TofuPixel</div>
+                            <div>Commissions Not Open!!!! I don't post here! follow me on Bsky to see new art💕<span>http://bsky.app/profile/tofupi...</span></div>
+                        </div>
+                    </div>
+
+                    <div class="follow-btn">Follow</div>
+                </div>
+
+                <div class="profile-btn">
+                    <div class="profile-left" id="piuriem">
+                        <img src="https://pbs.twimg.com/profile_images/1403980944373997573/8UllOG1t_400x400.jpg">
+                        <div>
+                            <div>E/</div>
+                            <div>@Loca_ruchem</div>
+                            <div>▲｢イスラ｣/創作関連以外は定期的にツイ整理/オリポケ/暁(dawn)&黄昏(dusk)/fakemon/FA◎/DM×(ff○)/commission×/転載禁止-Do not reupload.</div>
+                        </div>
+                    </div>
+
+                    <div class="follow-btn">Follow</div>
+                </div>
+
+                <div class="profile-btn">
+                    <div class="profile-left" id="piuriem">
+                        <img src="https://pbs.twimg.com/profile_images/1877318187194462208/fDtpZeiZ_400x400.jpg">
+                        <div>
+                            <div>さくら/SAKURA</div>
+                            <div>@sakura_fakemon</div>
+                            <span>#オリポケ/#fakemon</span>
+                        </div>
+                    </div>
+
+                    <div class="follow-btn">Follow</div>
+                </div>
+                
+
+                
+                <div class="show-more">Show more</div>
+            </div>
+
+        </div>
+
+        <div class="item-container" id="right-container" style="grid-area: right">
+
+            <div class="news">
+                <div class="news-header">
+                    <h3>Today's News</h3>
+                    <svg class="news-x" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1hjwoze r-12ym1je" style="color: rgb(15, 20, 25);"><g><path d="M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z"></path></g></svg>
+                </div>
+
+                <div class="news-article">
+                    <h4 id="free-agent">Free agent Jordan Clarkson agrees to one-year $3.9 million deal to return to New Yor...</h4>
+                    <div class="avatars-container">
+                        <div class="user-avatars">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/068/691/804/small/nba-logo-football-club-icon-free-vector.jpg" id="avatar-1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbfoMpMio-65Ct4eOBiovq2FQaFa4LX5_ssuCsYZuEmAt2sbNpK1gJzug&s=10" id="avatar-2">
+                            <img src="https://awfulannouncing.com/wp-content/uploads/sites/94/2023/12/USATSI_7571633-scaled-e1734489763974.jpg" id="avatar-3">
+                        </div>
+                        <div class="news-details">Trending Now · Sports · 3,149 posts</div>
+                    </div>
+                </div>
+                
+                <div class="news-article">
+                    <h4>Tennessee Football Reveals New Black Adidas Dark Mode Uniforms for 2026...</h4>
+                    <div class="avatars-container">
+                        <div class="user-avatars">
+                            <img src="https://pbs.twimg.com/profile_images/2072687617825447936/WB1RKlai_400x400.jpg" id="avatar-1">
+                            <img src="https://www.rockytopinsider.com/wp-content/uploads/2024/09/IMG_7772.jpg" id="avatar-2">
+                            <img src="https://m.media-amazon.com/images/I/316HySxdvoL.png" id="avatar-3">
+                        </div>
+                        <div class="news-details">Trending Now · Sports · 1,071 posts</div>
+                    </div>
+                </div>
+                
+                <div class="news-article" id="marvel">
+                    <h4>Marvel Rivals Unveils Daredevil Lifeguard Skin</h4>
+                    <div class="avatars-container" >
+                        <div class="user-avatars">
+                            <img src="https://gizmodo.com/app/uploads/2025/05/Marvel-Rivals-Ultron-Gameplay-Trailer.jpg" id="avatar-1">
+                            <img src="https://cdn.mos.cms.futurecdn.net/MrNCGMmAsj74no58NQ4SC.jpg" id="avatar-2">
+                            <img src="https://i.3djuegos.com/juegos/19634/marvel_rivals/fotos/ficha/marvel_rivals-5881282.webp" id="avatar-3">
+                        </div>
+                        <div class="news-details">2 hours ago · Entertainment · 1,530 posts</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="who-to-follow">
+                <h3>Who to follow</h3>
+                <div class="profile-btn">
+                    <div class="profile-left" id="piuriem">
+                        <img src="https://pbs.twimg.com/profile_images/2069947579505496064/A8a2f-Aj_400x400.jpg">
+                        <div>
+                            <div>むきぐり</div>
+                            <div>@mk_mukiguri</div>
+                        </div>
+                    </div>
+
+                    <div class="follow-btn">Follow</div>
+                </div>
+
+                <div class="profile-btn">
+                    <div class="profile-left" id="piuriem">
+                        <img src="https://pbs.twimg.com/profile_images/1830419179003891712/KnJYnMp3_400x400.jpg">
+                        <div>
+                            <div>🌸piuriem</div>
+                            <div>@d_piuriem</div>
+                        </div>
+                    </div>
+
+                    <div class="follow-btn">Follow</div>
+                </div>
+                
+
+                <div class="profile-btn">
+                    <div class="profile-left" id="piuriem">
+                        <img src="https://pbs.twimg.com/profile_images/1638527846451916800/zNIkBXLn_400x400.jpg">
+                        <div>
+                            <div>原稿中のわらびもち</div>
+                            <div>@omoch_mchmch</div>
+                        </div>
+                    </div>
+
+                    <div class="follow-btn">Follow</div>
+                </div>
+                <div class="show-more">Show more</div>
+            </div>
+
+            <div class="right-ad">
+                <img src="https://s0.2mdn.net/simgad/16826649507874289246">
+            </div>
+
+            <hr>
+
+            <div class="copyright">
+                <div>Terms &ensp;&middot;</div>
+                <div>Privacy &ensp;&middot;</div>
+                <div>Cookies &ensp;&middot;</div>
+                <div>Accessibility &ensp;&middot;</div>
+                <div>US TIDA &ensp;&middot;</div>
+                <div>Ads Info &ensp;&middot;</div>
+                <div>More <svg style="height: 10px" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-ip8ujx r-lzsi8w"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg></div>
+                <div>© 2026 X Corp.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------JavaScript ------------------------------------>
+    <script>
+        const tabs = document.querySelectorAll(".header-tab");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", () => {
+                //Hide every bar
+                tabs.forEach(t => {
+                    t.classList.remove("active");
+                    t.querySelector(".header-bar").classList.remove("show");
+                });
+
+                //Show the clicked tab's bar
+                tab.classList.add("active");
+                tab.querySelector(".header-bar").classList.add("show");
+            });
+        });
+
+        //Search Bar Menu
+        const searchBar = document.querySelector(".search-bar");
+        const searchInput = document.querySelector(".search-bar input");
+        const searchMenu = document.getElementById("searchMenu");
+
+        searchBar.addEventListener("click", function (event) {
+            event.stopPropagation();
+            searchInput.focus();
+            searchMenu.classList.add("open-menu");
+        });
+
+        //Hide when user clicks outside of search menu
+        document.addEventListener("click", function (event) {
+            if (!searchBar.contains(event.target)) {
+                searchMenu.classList.remove("open-menu");
+            }
+        });
+
+        /* --------------------------Nav "More" Menu -----------------------*/
+        const moreMenu = document.getElementById("moreMenu");
+        const moreIcon = document.getElementById('moreIcon');
+        
+        moreIcon.addEventListener("click", function (event) {
+            event.stopPropagation();
+            moreMenu.classList.toggle("open-more-menu");
+        });
+
+        document.addEventListener("click", function() {
+            moreMenu.classList.remove("open-more-menu");
+        });
+
+
+    </script>
+    
+</body>
+</html>
