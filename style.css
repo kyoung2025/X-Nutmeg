@@ -389,12 +389,13 @@ body{
     display: flex;
 }
 .post-header{
+    width: 100%;
     color: rgba(83, 100, 113, 1);
     display: flex;
     justify-content: space-between;
 }
 .post-author{
-    width: 100%;
+    width: 91%;
   
 }
 .post-author-left div:nth-child(1){
@@ -1120,7 +1121,7 @@ body{
     margin-left: 3px;
 
     position: absolute;
-    bottom: 238px;
+    bottom: 272px;
 }
 .profile-filter div:active::after{
     width: 4%;
