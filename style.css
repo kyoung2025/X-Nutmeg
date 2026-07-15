@@ -1113,7 +1113,7 @@ body{
     transition:  background-color 0.3s ease;
     cursor: pointer;
 }
-.profile-filter div::after{
+/*.profile-filter div::after{
     content: '';
     height: 4px;
     border-radius: 30px;
@@ -1125,7 +1125,7 @@ body{
 }
 .profile-filter div:active::after{
     width: 4%;
-}
+}*/
 .profile-filter :active{
     color: #000000;
     font-weight: bold;
