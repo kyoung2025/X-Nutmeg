@@ -394,7 +394,7 @@ body{
     justify-content: space-between;
 }
 .post-author{
-    width: 91%;
+    width: 100%;
   
 }
 .post-author-left div:nth-child(1){
